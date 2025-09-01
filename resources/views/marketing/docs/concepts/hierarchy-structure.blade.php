@@ -1,7 +1,7 @@
 <x-marketing-docs-layout :marketingPage="$marketingPage">
   <div class="grid grid-cols-1 gap-x-16 lg:grid-cols-[1fr_250px]">
     <div class="py-16 sm:border-r sm:border-gray-200 sm:pr-10">
-      <x-marketing.h1 title="Hierarchical structure" />
+      <x-docs.h1 title="Hierarchical structure" />
 
       <p class="mb-2">OrganizationOS models real-world structure in a simple, flexible way. The goal is not to capture every HR detail, but to provide the essential building blocks:</p>
       <ul class="mb-2 list-disc pl-6">
@@ -19,7 +19,7 @@
         . The same structure works for remote-first companies and multi-country organizations.
       </p>
 
-      <x-marketing.h2 id="countries" title="Countries" />
+      <x-docs.h2 id="countries" title="Countries" />
 
       <p class="mb-2">Countries are the geographic foundation. They provide context for offices and employees and help with reporting and grouping.</p>
 
@@ -33,7 +33,7 @@
         Fully remote organizations may still define a “home country” for legal or tax reasons, or skip countries if not relevant.
       </p>
 
-      <x-marketing.h2 id="offices" title="Offices" />
+      <x-docs.h2 id="offices" title="Offices" />
 
       <p class="mb-2">Offices represent physical or virtual hubs where people work. They can be headquarters, branches, satellites, or a single "Remote (global)" placeholder for remote-only setups.</p>
 
@@ -42,7 +42,7 @@
         Dunder Mifflin’s corporate HQ is in New York. The Scranton location is a branch office. A remote-first startup could designate a single office named Remote (global) and mark it as HQ if appropriate.
       </p>
 
-      <x-marketing.h2 id="divisions" title="Divisions" />
+      <x-docs.h2 id="divisions" title="Divisions" />
 
       <p class="mb-2">Divisions are the highest-level business areas, such as Sales, Operations, or Corporate Management. They give broad direction and accountability.</p>
 
@@ -51,7 +51,7 @@
         Corporate-level management (e.g., Jan Levinson for Sales, David Wallace for Finance/Corporate) sits at the division layer.
       </p>
 
-      <x-marketing.h2 id="departments" title="Departments" />
+      <x-docs.h2 id="departments" title="Departments" />
 
       <p class="mb-2">Departments are functional groupings inside divisions (e.g., Sales Department, Accounting, Customer Service). They are the backbone of day-to-day work.</p>
 
@@ -67,7 +67,7 @@
         In Scranton, the Accounting Department (Angela, Oscar, Kevin) and Customer Service (Kelly) are departments under different divisions.
       </p>
 
-      <x-marketing.h2 id="teams" title="Teams" />
+      <x-docs.h2 id="teams" title="Teams" />
 
       <p class="mb-2">Teams are the smallest operational units and live inside departments. They represent the working group people identify with day-to-day.</p>
 
@@ -76,7 +76,7 @@
         The Scranton Sales Team includes Jim, Dwight, Phyllis, and Stanley, with Michael as the office’s manager.
       </p>
 
-      <x-marketing.h2 id="guilds" title="Guilds" />
+      <x-docs.h2 id="guilds" title="Guilds" />
 
       <p class="mb-2">Guilds are cross-functional communities of practice that cut across departments and divisions. They’re great for knowledge sharing and standards.</p>
 
@@ -85,7 +85,7 @@
         The Party Planning Committee (Angela, Pam, Phyllis) and the Safety Committee (Dwight, Toby, Michael) are guilds that operate across the Scranton office; a Global Sales Guild can connect sales reps across countries.
       </p>
 
-      <x-marketing.h2 id="key-principles" title="Key principles" />
+      <x-docs.h2 id="key-principles" title="Key principles" />
 
       <p class="mb-2">There are some basic rules to follow:</p>
 
@@ -97,7 +97,7 @@
         <li>Departments can contain sub-departments. Keep things flat if you’re small; nest when you need the flexibility.</li>
       </ul>
 
-      <x-marketing.h2 id="headquarters-vs-branch-offices" title="Headquarters vs. branch offices" />
+      <x-docs.h2 id="headquarters-vs-branch-offices" title="Headquarters vs. branch offices" />
 
       <p class="mb-2">Headquarters (HQ) is the primary office of the organization. It typically houses executive leadership and is tied to legal registration, tax, and compliance. Your data model should allow exactly one office per organization to be flagged as HQ.</p>
 

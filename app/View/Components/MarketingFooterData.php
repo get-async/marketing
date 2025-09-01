@@ -20,6 +20,6 @@ final class MarketingFooterData extends Component
     {
         $this->pageviews = number_format($this->marketingPage->pageviews ?? 0);
 
-        return view('components.marketing.footer-data');
+        return view('components.footer-data');
     }
 }

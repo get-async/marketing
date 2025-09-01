@@ -4,8 +4,8 @@
     <!-- Logo -->
     <div class="flex items-center">
       <a href="{{ route('marketing.index') }}" class="group flex items-center gap-x-2 transition-transform ease-in-out">
-        <div class="flex h-7 w-7 items-center justify-center transition-all duration-400 group-hover:-translate-y-0.5 group-hover:-rotate-3">
-          <x-image src="{{ asset('logo.webp') }}" alt="OrganizationOS logo" width="25" height="25" srcset="{{ asset('logo.webp') }} 1x, {{ asset('logo@2x.webp') }} 2x" />
+        <div class="transition-all duration-400 group-hover:-translate-y-0.5 group-hover:-rotate-3">
+          <x-logo width="25" height="25" />
         </div>
         <span class="text-lg font-semibold text-gray-900 dark:text-white">{{ config('app.name') }}</span>
       </a>
