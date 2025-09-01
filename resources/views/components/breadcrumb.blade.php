@@ -3,7 +3,7 @@
 ])
 
 <div class="border-b border-gray-200 py-3 text-sm">
-  <div class="mx-auto flex max-w-7xl items-center gap-x-2 px-6 lg:px-8 xl:px-0">
+  <div class="mx-auto flex max-w-8xl items-center gap-x-2 px-6">
     <div class="flex gap-x-2">
       <p class="text-gray-500">You are here:</p>
       @foreach ($items as $item)
