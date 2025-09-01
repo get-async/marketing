@@ -15,7 +15,7 @@ it('generates a sitemap file', function (): void {
     // Assert the file was created
     expect(file_exists(public_path('sitemap.xml')))->toBeTrue();
 
-    // Assert it contains expected URLsk
+    // Assert it contains expected URLs
     $content = file_get_contents(public_path('sitemap.xml'));
     expect($content)
         ->toContain('https://async.foundation/')
