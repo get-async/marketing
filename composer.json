@@ -14,7 +14,8 @@
         "codeat3/blade-phosphor-icons": "^2.3",
         "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "spatie/laravel-sitemap": "^7.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.16",
@@ -67,6 +68,7 @@
         "test": [
           "@async:unit",
           "@async:setup",
+          "@async:sitemap",
           "@async:lint"
         ],
         "precommit": [
@@ -77,12 +79,14 @@
           "@async:update",
           "@async:lint",
           "@async:type-coverage",
+          "@async:sitemap",
           "@async:setup"
         ],
         "async:lint": "./vendor/bin/pint",
         "async:prettier": "npx prettier --write resources/",
         "async:rector": "./vendor/bin/rector",
         "async:setup": "php artisan migrate:fresh",
+        "async:sitemap": "php artisan marketing:generate-sitemap",
         "async:static": "./vendor/bin/phpstan analyse --memory-limit=256M",
         "async:type-coverage": "./vendor/bin/pest --type-coverage --min=100",
         "async:update": "composer update && bun update",

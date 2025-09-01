@@ -4,7 +4,7 @@
 ])
 
 <x-marketing-layout :marketingPage="$marketingPage">
-  @if (!empty($breadcrumbItems))
+  @if (! empty($breadcrumbItems))
     <x-breadcrumb :items="$breadcrumbItems" />
   @endif
 
