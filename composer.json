@@ -68,6 +68,7 @@
         "test": [
           "@async:unit",
           "@async:setup",
+          "@async:sitemap",
           "@async:lint"
         ],
         "precommit": [
@@ -78,12 +79,14 @@
           "@async:update",
           "@async:lint",
           "@async:type-coverage",
+          "@async:sitemap",
           "@async:setup"
         ],
         "async:lint": "./vendor/bin/pint",
         "async:prettier": "npx prettier --write resources/",
         "async:rector": "./vendor/bin/rector",
         "async:setup": "php artisan migrate:fresh",
+        "async:sitemap": "php artisan marketing:generate-sitemap",
         "async:static": "./vendor/bin/phpstan analyse --memory-limit=256M",
         "async:type-coverage": "./vendor/bin/pest --type-coverage --min=100",
         "async:update": "composer update && bun update",
