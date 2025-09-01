@@ -12,12 +12,14 @@ final class MarketingDocsLayout extends Component
 {
     public function __construct(
         public MarketingPage $marketingPage,
+        public array $breadcrumbItems = [],
     ) {}
 
     public function render(): View
     {
         return view('layouts.docs', [
             'marketingPage' => $this->marketingPage,
+            'breadcrumbItems' => $this->breadcrumbItems,
         ]);
     }
 }

@@ -1,12 +1,12 @@
+@props([
+  'marketingPage',
+  'breadcrumbItems' => [],
+])
+
 <x-marketing-layout :marketingPage="$marketingPage">
-  <!-- breadcrumb -->
-  <div class="border-b border-gray-200 py-3 text-sm">
-    <div class="mx-auto flex max-w-7xl items-center gap-x-2 px-6 lg:px-8 xl:px-0">
-      <a href="" class="text-blue-500 hover:underline">Home</a>
-      <span class="text-gray-500">&gt;</span>
-      <span class="text-gray-600">Documentation</span>
-    </div>
-  </div>
+  @if (!empty($breadcrumbItems))
+    <x-breadcrumb :items="$breadcrumbItems" />
+  @endif
 
   <div class="relative mx-auto max-w-7xl px-6 lg:px-8 xl:px-0">
     <div class="grid grid-cols-1 gap-x-16 lg:grid-cols-[250px_1fr]">

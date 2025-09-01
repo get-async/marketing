@@ -1,4 +1,8 @@
-<x-marketing-docs-layout :marketingPage="$marketingPage">
+<x-marketing-docs-layout :marketingPage="$marketingPage" :breadcrumbItems="[
+  ['label' => 'Home', 'route' => route('marketing.index')],
+  ['label' => 'Documentation', 'route' => route('marketing.docs.api.index')],
+  ['label' => 'Organizations'],
+]">
   <div class="py-16">
     <x-docs.h1 title="Organizations" />
 
