@@ -27,13 +27,13 @@
 
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
       <div>
-        <p class="mb-2">The OrganizationOS API is organized around REST. Our API has predictable resource-oriented URLs.</p>
+        <p class="mb-2">The {{ config('app.name') }} API is organized around REST. Our API has predictable resource-oriented URLs.</p>
         <p class="mb-2">
           You
           <strong>can not</strong>
-          use the OrganizationOS API in test mode. This means all requests will be processed towards your production account. Please be cautious.
+          use the {{ config('app.name') }} API in test mode. This means all requests will be processed towards your production account. Please be cautious.
         </p>
-        <p>The OrganizationOS API doesn’t support bulk updates. You can work on only one object per request.</p>
+        <p>The {{ config('app.name') }} API doesn’t support bulk updates. You can work on only one object per request.</p>
       </div>
 
       <div>

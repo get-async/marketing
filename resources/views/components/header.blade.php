@@ -25,7 +25,7 @@
       <div class="flex items-center gap-x-2">
         <a href="" class="group flex items-center gap-x-2 rounded-sm border border-b-3 border-transparent px-2 py-1 transition-colors duration-150 hover:border-gray-400 hover:bg-white">
           <x-phosphor-question class="h-4 w-4 text-blue-600 group-hover:text-blue-700" />
-          <p class="text-sm text-gray-700 group-hover:text-gray-900">Why OrganizationOS</p>
+          <p class="text-sm text-gray-700 group-hover:text-gray-900">Why {{ config('app.name') }}</p>
         </a>
 
         <a href="" class="group flex items-center gap-x-2 rounded-sm border border-b-3 border-transparent px-2 py-1 transition-colors duration-150 hover:border-gray-400 hover:bg-white">
