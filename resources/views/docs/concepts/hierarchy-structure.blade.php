@@ -3,7 +3,7 @@
     <div class="py-16 sm:border-r sm:border-gray-200 sm:pr-10">
       <x-docs.h1 title="Hierarchical structure" />
 
-      <p class="mb-2">OrganizationOS models real-world structure in a simple, flexible way. The goal is not to capture every HR detail, but to provide the essential building blocks:</p>
+      <p class="mb-2">{{ config('app.name') }} models real-world structure in a simple, flexible way. The goal is not to capture every HR detail, but to provide the essential building blocks:</p>
       <ul class="mb-2 list-disc pl-6">
         <li>Countries</li>
         <li>Offices</li>

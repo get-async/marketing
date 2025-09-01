@@ -19,13 +19,13 @@
 
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
       <div>
-        <p class="mb-2">The OrganizationOS API uses API keys to authenticate requests. You can view and manage your API keys in your administration panel.</p>
+        <p class="mb-2">The {{ config('app.name') }} API uses API keys to authenticate requests. You can view and manage your API keys in your administration panel.</p>
         <p class="mb-2">Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth.</p>
         <p class="mb-2">On our instance, all API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail. On your instance, it will be up to you.</p>
         <p class="mb-2">You must use the API key in the Authorization header. The value must be Bearer followed by a space and then the API key.</p>
         <p class="mb-2">
           On our instance, the API calls are rate limited to 60 requests per minute. On your instance, you can change that settings in the
-          <x-link href="https://github.com/djaiss/organizationOS/blob/main/routes/api.php" target="_blank">api.php</x-link>
+          <x-link href="https://github.com/get-async/app/blob/main/routes/api.php" target="_blank">api.php</x-link>
           configuration file.
         </p>
         <p class="mb-2">There are two ways to get an API key:</p>
