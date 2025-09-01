@@ -23,7 +23,6 @@
       </main>
 
       @include('marketing.partials.footer')
-      @include('components.toaster')
     </div>
   </body>
 </html>
