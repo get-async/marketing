@@ -77,7 +77,7 @@ In a **separate terminal**, build the assets in watch mode:
 npm run dev
 ```
 
-Finally, start the development server:
+Finally, start the development server and enjoy:
 
 ```bash
 php artisan serve
