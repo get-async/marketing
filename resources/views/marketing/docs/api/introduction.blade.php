@@ -1,8 +1,8 @@
 <x-marketing-docs-layout :marketingPage="$marketingPage">
   <div class="py-16">
-    <x-marketing.h1 title="API reference" />
+    <x-docs.h1 title="API reference" />
 
-    <x-marketing.table-of-content :items="[
+    <x-docs.table-of-content :items="[
       [
         'id' => 'test-the-api-yourself',
         'title' => 'Test the API yourself',
@@ -34,12 +34,12 @@
 
       <div>
         <h2 class="mb-2 text-lg font-bold">Base URL</h2>
-        <x-marketing.code>{{ config('app.url') }}/api</x-marketing.code>
+        <x-docs.code>{{ config('app.url') }}/api</x-docs.code>
       </div>
     </div>
 
     <div class="mb-10 border-b border-gray-200 pb-10 sm:grid-cols-2">
-      <x-marketing.h2 id="test-the-api-yourself" title="Test the API yourself" />
+      <x-docs.h2 id="test-the-api-yourself" title="Test the API yourself" />
       <p class="mb-2">
         If you want to test the API yourself, we provide two convenient tools for you to use:
         <x-link href="https://www.usebruno.com/" target="_blank">Bruno</x-link>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="mb-10 border-b border-gray-200 pb-10 sm:grid-cols-2">
-      <x-marketing.h2 id="conventions-of-the-api" title="Conventions of the API" />
+      <x-docs.h2 id="conventions-of-the-api" title="Conventions of the API" />
       <p class="mb-2">
         There is no strict standard for JSON payloads, but we do try to follow
         <x-link href="https://jsonapi.org/" target="_blank">the JSON:API specification</x-link>
@@ -64,7 +64,7 @@
 
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
       <div>
-        <x-marketing.h2 id="pagination" title="Pagination" />
+        <x-docs.h2 id="pagination" title="Pagination" />
         <p class="mb-2">All endpoints that return a collection of resources support pagination.</p>
         <p class="mb-2">
           The default value for
@@ -74,7 +74,7 @@
         <p class="mb-2">All responses will include links to navigate to the next and previous pages.</p>
       </div>
       <div>
-        <x-marketing.code title="Example of pagination" verb="GET" verbClass="text-green-700">
+        <x-docs.code title="Example of pagination" verb="GET" verbClass="text-green-700">
           <div>{</div>
           <div class="pl-4">
             "meta":
@@ -190,34 +190,34 @@
             <span class="text-rose-800">}</span>
           </div>
           <div>}</div>
-        </x-marketing.code>
+        </x-docs.code>
       </div>
     </div>
 
     <!-- GET /api/health -->
     <div class="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <div>
-        <x-marketing.h2 id="health" title="Health" />
+        <x-docs.h2 id="health" title="Health" />
         <p class="mb-10">This endpoint checks the health of the application and returns a simple "ok" message. It lets you know if the application is running and if the database is connected.</p>
 
         <!-- url parameters -->
-        <x-marketing.url-parameters>
+        <x-docs.url-parameters>
           <p class="text-gray-500">This endpoint does not have any parameters.</p>
-        </x-marketing.url-parameters>
+        </x-docs.url-parameters>
 
         <!-- query parameters -->
-        <x-marketing.query-parameters>
+        <x-docs.query-parameters>
           <p class="text-gray-500">This endpoint does not have any parameters.</p>
-        </x-marketing.query-parameters>
+        </x-docs.query-parameters>
 
         <!-- response attributes -->
-        <x-marketing.response-attributes>
-          <x-marketing.attribute name="message" type="string" description="The message of the response." />
-          <x-marketing.attribute name="status" type="integer" description="The status code of the response." />
-        </x-marketing.response-attributes>
+        <x-docs.response-attributes>
+          <x-docs.attribute name="message" type="string" description="The message of the response." />
+          <x-docs.attribute name="status" type="integer" description="The status code of the response." />
+        </x-docs.response-attributes>
       </div>
       <div>
-        <x-marketing.code title="/api/health" verb="GET" verbClass="text-green-700">
+        <x-docs.code title="/api/health" verb="GET" verbClass="text-green-700">
           <div>{</div>
           <div class="pl-4">
             "message":
@@ -230,7 +230,7 @@
             ,
           </div>
           <div>}</div>
-        </x-marketing.code>
+        </x-docs.code>
       </div>
     </div>
   </div>

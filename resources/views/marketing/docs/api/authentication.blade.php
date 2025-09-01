@@ -1,8 +1,8 @@
 <x-marketing-docs-layout :marketingPage="$marketingPage">
   <div class="py-16">
-    <x-marketing.h1 title="Authentication" />
+    <x-docs.h1 title="Authentication" />
 
-    <x-marketing.table-of-content :items="[
+    <x-docs.table-of-content :items="[
       [
         'id' => 'login',
         'title' => 'Login',
@@ -36,7 +36,7 @@
       </div>
       <div>
         <p class="mb-2">
-          <x-marketing.code>curl -X GET "{{ config('app.url') }}/api/organizations" \ -H "Authorization: Bearer YOUR_API_KEY"</x-marketing.code>
+          <x-docs.code>curl -X GET "{{ config('app.url') }}/api/organizations" \ -H "Authorization: Bearer YOUR_API_KEY"</x-docs.code>
         </p>
       </div>
     </div>
@@ -44,30 +44,30 @@
     <!-- POST /api/login -->
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
       <div>
-        <x-marketing.h2 id="login" title="Login" />
+        <x-docs.h2 id="login" title="Login" />
         <p class="mb-10">This endpoint logs in a user and returns an API key. This is the only endpoint that lets you use your email and password to authenticate your requests.</p>
 
         <!-- url parameters -->
-        <x-marketing.url-parameters>
+        <x-docs.url-parameters>
           <p class="text-gray-500">This endpoint does not have any parameters.</p>
-        </x-marketing.url-parameters>
+        </x-docs.url-parameters>
 
         <!-- query parameters -->
-        <x-marketing.query-parameters>
-          <x-marketing.attribute required name="email" type="string" description="The email of the user. Maximum 255 characters." />
-          <x-marketing.attribute required name="password" type="string" description="The password of the user. Maximum 255 characters." />
-        </x-marketing.query-parameters>
+        <x-docs.query-parameters>
+          <x-docs.attribute required name="email" type="string" description="The email of the user. Maximum 255 characters." />
+          <x-docs.attribute required name="password" type="string" description="The password of the user. Maximum 255 characters." />
+        </x-docs.query-parameters>
 
         <!-- response attributes -->
-        <x-marketing.response-attributes>
-          <x-marketing.attribute name="message" type="string" description="The message of the response." />
-          <x-marketing.attribute name="status" type="integer" description="The status code of the response." />
-          <x-marketing.attribute name="data" type="object" description="The data of the response." />
-          <x-marketing.attribute name="token" type="string" description="The API key of the user." />
-        </x-marketing.response-attributes>
+        <x-docs.response-attributes>
+          <x-docs.attribute name="message" type="string" description="The message of the response." />
+          <x-docs.attribute name="status" type="integer" description="The status code of the response." />
+          <x-docs.attribute name="data" type="object" description="The data of the response." />
+          <x-docs.attribute name="token" type="string" description="The API key of the user." />
+        </x-docs.response-attributes>
       </div>
       <div>
-        <x-marketing.code title="/api/login" verb="POST" verbClass="text-green-700">
+        <x-docs.code title="/api/login" verb="POST" verbClass="text-green-700">
           <div>{</div>
           <div class="pl-4">
             "message":
@@ -87,14 +87,14 @@
           </div>
           <div class="pl-4">}</div>
           <div>}</div>
-        </x-marketing.code>
+        </x-docs.code>
       </div>
     </div>
 
     <!-- DELETE /api/logout -->
     <div class="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <div>
-        <x-marketing.h2 id="logout" title="Logout" />
+        <x-docs.h2 id="logout" title="Logout" />
         <p class="mb-10">
           This endpoint logs out a user and
           <strong>deletes the API key that was used to authenticate the request</strong>
@@ -102,23 +102,23 @@
         </p>
 
         <!-- url parameters -->
-        <x-marketing.url-parameters>
+        <x-docs.url-parameters>
           <p class="text-gray-500">This endpoint does not have any parameters.</p>
-        </x-marketing.url-parameters>
+        </x-docs.url-parameters>
 
         <!-- query parameters -->
-        <x-marketing.query-parameters>
+        <x-docs.query-parameters>
           <p class="text-gray-500">No query parameters are available for this endpoint.</p>
-        </x-marketing.query-parameters>
+        </x-docs.query-parameters>
 
         <!-- response attributes -->
-        <x-marketing.response-attributes>
-          <x-marketing.attribute name="message" type="string" description="The message of the response." />
-          <x-marketing.attribute name="status" type="integer" description="The status code of the response." />
-        </x-marketing.response-attributes>
+        <x-docs.response-attributes>
+          <x-docs.attribute name="message" type="string" description="The message of the response." />
+          <x-docs.attribute name="status" type="integer" description="The status code of the response." />
+        </x-docs.response-attributes>
       </div>
       <div>
-        <x-marketing.code title="/api/logout" verb="DELETE" verbClass="text-red-700">
+        <x-docs.code title="/api/logout" verb="DELETE" verbClass="text-red-700">
           <div>{</div>
           <div class="pl-4">
             "message":
@@ -131,7 +131,7 @@
             ,
           </div>
           <div>}</div>
-        </x-marketing.code>
+        </x-docs.code>
       </div>
     </div>
   </div>
