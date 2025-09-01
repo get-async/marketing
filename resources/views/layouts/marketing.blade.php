@@ -15,14 +15,14 @@
   </head>
   <body class="font-sans antialiased">
     <div class="min-h-screen bg-white dark:bg-gray-900">
-      @include('marketing.partials.header')
+      @include('components.header')
 
       <!-- Page Content -->
       <main>
         {{ $slot }}
       </main>
 
-      @include('marketing.partials.footer')
+      @include('components.footer')
     </div>
   </body>
 </html>

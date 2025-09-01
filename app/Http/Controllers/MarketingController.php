@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers\Marketing;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -14,7 +13,7 @@ final class MarketingController extends Controller
     {
         $marketingPage = $request->attributes->get('marketingPage');
 
-        return view('marketing.index', [
+        return view('index', [
             'marketingPage' => $marketingPage,
         ]);
     }

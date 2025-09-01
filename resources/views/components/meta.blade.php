@@ -5,6 +5,6 @@
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 <!-- favicon -->
-<link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+<link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml" />
 
 <meta name="description" content="{{ config('async.description') }}" />

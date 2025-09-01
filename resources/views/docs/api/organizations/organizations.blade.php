@@ -81,7 +81,7 @@
       </div>
       <div>
         <x-docs.code title="/api/organizations" verb="GET" verbClass="text-blue-700">
-          @include('marketing.docs.api.partials.organization-response')
+          @include('docs.api.partials.organization-response')
         </x-docs.code>
       </div>
     </div>
@@ -117,7 +117,7 @@
       </div>
       <div>
         <x-docs.code title="/api/organizations/{id}" verb="GET" verbClass="text-blue-700">
-          @include('marketing.docs.api.partials.organization-response')
+          @include('docs.api.partials.organization-response')
         </x-docs.code>
       </div>
     </div>
@@ -154,7 +154,7 @@
       </div>
       <div>
         <x-docs.code title="/api/organizations" verb="POST" verbClass="text-green-700">
-          @include('marketing.docs.api.partials.organization-response')
+          @include('docs.api.partials.organization-response')
         </x-docs.code>
       </div>
     </div>
