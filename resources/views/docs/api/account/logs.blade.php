@@ -69,7 +69,7 @@
       </div>
       <div>
         <x-docs.code title="/api/settings/logs" verb="GET" verbClass="text-blue-700">
-          @include('marketing.docs.api.partials.log-response')
+          @include('docs.api.partials.log-response')
         </x-docs.code>
       </div>
     </div>
@@ -105,7 +105,7 @@
       </div>
       <div>
         <x-docs.code title="/api/settings/logs/{log}" verb="GET" verbClass="text-blue-700">
-          @include('marketing.docs.api.partials.log-response')
+          @include('docs.api.partials.log-response')
         </x-docs.code>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers\Marketing\Docs\Api;
+namespace App\Http\Controllers\Docs\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ final class AuthenticationController extends Controller
     {
         $marketingPage = $request->attributes->get('marketingPage');
 
-        return view('marketing.docs.api.authentication', [
+        return view('docs.api.authentication', [
             'marketingPage' => $marketingPage,
         ]);
     }
