@@ -114,8 +114,6 @@
             <x-link href="https://posthog.com" target="_blank">Posthog website</x-link>
             .
           </p>
-
-          <x-marketing-footer-data :marketing-page="$marketingPage" />
         </div>
 
         <div class="mt-6 sm:mt-0">
