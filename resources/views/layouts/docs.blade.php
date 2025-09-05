@@ -3,7 +3,7 @@
   'breadcrumbItems' => [],
 ])
 
-<x-marketing-layout :marketingPage="$marketingPage">
+<x-marketing-layout>
   @if (! empty($breadcrumbItems))
     <x-breadcrumb :items="$breadcrumbItems" />
   @endif

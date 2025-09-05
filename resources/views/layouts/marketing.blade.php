@@ -12,6 +12,8 @@
 
     <!-- json-ld -->
     @yield('json-ld')
+
+    @livewireStyles
   </head>
   <body class="font-sans antialiased">
     <div class="min-h-screen bg-white dark:bg-gray-900">
@@ -24,5 +26,6 @@
 
       @include('components.footer')
     </div>
+    @livewireScripts
   </body>
 </html>

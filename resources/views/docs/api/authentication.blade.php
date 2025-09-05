@@ -1,4 +1,4 @@
-<x-marketing-docs-layout :marketingPage="$marketingPage" :breadcrumbItems="[
+<x-marketing-docs-layout :breadcrumbItems="[
   ['label' => 'Home', 'route' => route('marketing.index')],
   ['label' => 'Documentation', 'route' => route('marketing.docs.api.index')],
   ['label' => 'Authentication'],
