@@ -36,7 +36,7 @@
           <div x-show="conceptsDocumentation" x-cloak class="mb-2 ml-3">
             <div class="mb-3 flex flex-col gap-y-2">
               <div>
-                <a href="{{ route('marketing.docs.concepts.hierarchical-structure') }}" class="{{ request()->routeIs('marketing.docs.concepts.hierarchical-structure') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Hierarchical structure</a>
+                <a href="{{ route('marketing.docs.concepts.hierarchical-structure') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.concepts.hierarchical-structure') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Hierarchical structure</a>
               </div>
             </div>
           </div>
@@ -51,13 +51,13 @@
           <div x-show="openApiDocumentation" x-cloak class="mb-10 ml-3">
             <div class="mb-3 flex flex-col gap-y-2">
               <div>
-                <a href="{{ route('marketing.docs.api.index') }}" class="{{ request()->routeIs('marketing.docs.api.index') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Introduction</a>
+                <a href="{{ route('marketing.docs.api.index') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.index') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Introduction</a>
               </div>
               <div>
-                <a href="{{ route('marketing.docs.api.authentication') }}" class="{{ request()->routeIs('marketing.docs.api.authentication') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Authentication</a>
+                <a href="{{ route('marketing.docs.api.authentication') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.authentication') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Authentication</a>
               </div>
               <div>
-                <a href="" class="{{ request()->routeIs('marketing.docs.api.errors') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">HTTP status codes</a>
+                <a href="" wire:navigate class="{{ request()->routeIs('marketing.docs.api.errors') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">HTTP status codes</a>
               </div>
             </div>
 
@@ -68,13 +68,13 @@
             </div>
             <div x-show="accountManagementDocumentation" class="mb-3 flex flex-col gap-y-2">
               <div>
-                <a href="{{ route('marketing.docs.api.account.profile') }}" class="{{ request()->routeIs('marketing.docs.api.account.profile') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Profile</a>
+                <a href="{{ route('marketing.docs.api.account.profile') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.account.profile') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Profile</a>
               </div>
               <div>
-                <a href="{{ route('marketing.docs.api.account.logs') }}" class="{{ request()->routeIs('marketing.docs.api.account.logs') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Logs</a>
+                <a href="{{ route('marketing.docs.api.account.logs') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.account.logs') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Logs</a>
               </div>
               <div>
-                <a href="{{ route('marketing.docs.api.account.api-management') }}" class="{{ request()->routeIs('marketing.docs.api.account.api-management') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">API management</a>
+                <a href="{{ route('marketing.docs.api.account.api-management') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.account.api-management') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">API management</a>
               </div>
             </div>
 
@@ -85,7 +85,7 @@
             </div>
             <div x-show="organizationsDocumentation" class="mb-3 flex flex-col gap-y-2">
               <div>
-                <a href="{{ route('marketing.docs.api.organizations') }}" class="{{ request()->routeIs('marketing.docs.api.organizations') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Organizations</a>
+                <a href="{{ route('marketing.docs.api.organizations') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Organizations</a>
               </div>
             </div>
           </div>
