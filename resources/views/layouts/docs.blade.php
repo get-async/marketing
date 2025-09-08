@@ -12,23 +12,25 @@
     <div class="grid grid-cols-1 gap-x-16 lg:grid-cols-[250px_1fr]">
       <!-- Sidebar -->
       <div class="hidden w-full flex-shrink-0 flex-col justify-self-end sm:border-r sm:border-gray-200 sm:pr-3 lg:flex">
-        <div x-data="{
-          conceptsDocumentation:
-            '{{ str_starts_with( request()->route()->getName(),'marketing.docs.concepts.',) ? 'true' : 'false' }}' ===
-            'true',
-          openApiDocumentation:
-            '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.',) ? 'true' : 'false' }}' ===
-            'true',
-          accountManagementDocumentation:
-            '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.account.',) ? 'true' : 'false' }}' ===
-            'true',
-          organizationsDocumentation:
-            '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations',) ? 'true' : 'false' }}' ===
-            'true',
-          jobFamiliesDocumentation:
-            '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations.job-families',) ? 'true' : 'false' }}' ===
-            'true',
-        }" class="bg-light dark:bg-dark z-10 pt-16">
+        <div
+          x-data="{
+            conceptsDocumentation:
+              '{{ str_starts_with( request()->route()->getName(),'marketing.docs.concepts.',) ? 'true' : 'false' }}' ===
+              'true',
+            openApiDocumentation:
+              '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.',) ? 'true' : 'false' }}' ===
+              'true',
+            accountManagementDocumentation:
+              '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.account.',) ? 'true' : 'false' }}' ===
+              'true',
+            organizationsDocumentation:
+              '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations',) ? 'true' : 'false' }}' ===
+              'true',
+            jobFamiliesDocumentation:
+              '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations.job-families',) ? 'true' : 'false' }}' ===
+              'true',
+          }"
+          class="bg-light dark:bg-dark z-10 pt-16">
           <!-- concepts -->
           <div @click="conceptsDocumentation = !conceptsDocumentation" class="mb-2 flex cursor-pointer items-center justify-between rounded-md border border-transparent px-2 py-1 hover:border-gray-200 hover:bg-blue-50">
             <h3>Concepts</h3>
