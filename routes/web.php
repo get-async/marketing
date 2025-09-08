@@ -17,3 +17,4 @@ Route::get('/docs/api/profile', [Docs\Api\ProfileController::class, 'index'])->n
 Route::get('/docs/api/api-management', [Docs\Api\ApiManagementController::class, 'index'])->name('marketing.docs.api.account.api-management');
 Route::get('/docs/api/logs', [Docs\Api\LogsController::class, 'index'])->name('marketing.docs.api.account.logs');
 Route::get('/docs/api/organizations', [Docs\Api\OrganizationsController::class, 'index'])->name('marketing.docs.api.organizations');
+Route::get('/docs/api/organizations/job-families', [Docs\Api\Organization\JobFamilyController::class, 'index'])->name('marketing.docs.api.organizations.job-families');

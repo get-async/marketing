@@ -12,10 +12,6 @@ final class HierarchicalStructureController extends Controller
 {
     public function index(Request $request): View
     {
-        $marketingPage = $request->attributes->get('marketingPage');
-
-        return view('docs.concepts.hierarchy-structure', [
-            'marketingPage' => $marketingPage,
-        ]);
+        return view('docs.concepts.hierarchy-structure');
     }
 }

@@ -44,7 +44,7 @@
         <p class="mb-2">This endpoint gets the logs of the current user. This is useful to understand what the user has done in the account.</p>
         <p class="mb-10">
           This call is
-          <x-link href="{{ route('marketing.docs.index') }}#pagination">paginated</x-link>
+          <x-link href="{{ route('marketing.docs.index') }}#pagination" :hover="true" :navigate="false">paginated</x-link>
           , and the default page size is 10. This can not be changed.
         </p>
 

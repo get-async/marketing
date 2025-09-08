@@ -25,6 +25,9 @@
           organizationsDocumentation:
             '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations',) ? 'true' : 'false' }}' ===
             'true',
+          jobFamiliesDocumentation:
+            '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations.job-families',) ? 'true' : 'false' }}' ===
+            'true',
         }" class="bg-light dark:bg-dark z-10 pt-16">
           <!-- concepts -->
           <div @click="conceptsDocumentation = !conceptsDocumentation" class="mb-2 flex cursor-pointer items-center justify-between rounded-md border border-transparent px-2 py-1 hover:border-gray-200 hover:bg-blue-50">
@@ -86,6 +89,9 @@
             <div x-show="organizationsDocumentation" class="mb-3 flex flex-col gap-y-2">
               <div>
                 <a href="{{ route('marketing.docs.api.organizations') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Organizations</a>
+              </div>
+              <div>
+                <a href="{{ route('marketing.docs.api.organizations.job-families') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations.job-families') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Job families</a>
               </div>
             </div>
           </div>
