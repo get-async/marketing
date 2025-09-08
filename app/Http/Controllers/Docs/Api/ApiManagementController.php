@@ -12,10 +12,6 @@ final class ApiManagementController extends Controller
 {
     public function index(Request $request): View
     {
-        $marketingPage = $request->attributes->get('marketingPage');
-
-        return view('docs.api.account.api-management', [
-            'marketingPage' => $marketingPage,
-        ]);
+        return view('docs.api.account.api-management');
     }
 }

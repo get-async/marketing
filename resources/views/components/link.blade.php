@@ -1,4 +1,4 @@
-@props(['navigate' => true])
+@props(['navigate' => true, 'hover' => false])
 
 <a {{
     $attributes->class([
@@ -8,4 +8,4 @@
       'hover:text-blue-500 hover:decoration-blue-500',
       'transition-colors duration-200',
     ])
-  }} @if ($navigate) wire:navigate @endif>{{ $slot }}</a>
+  }} @if ($navigate) wire:navigate @endif @if ($hover) wire:navigate.hover @endif>{{ $slot }}</a>
