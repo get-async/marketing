@@ -23,6 +23,10 @@
         'id' => 'update-a-job-family',
         'title' => 'Update a job family',
       ],
+      [
+        'id' => 'delete-a-job-family',
+        'title' => 'Delete a job family',
+      ],
     ]" />
 
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
@@ -52,6 +56,12 @@
           <div class="flex flex-col gap-y-2">
             <a href="#update-a-job-family">
               <span class="text-yellow-700">PUT</span>
+              /api/organizations/{id}/job-families/{job-family-id}
+            </a>
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <a href="#delete-a-job-family">
+              <span class="text-red-700">DELETE</span>
               /api/organizations/{id}/job-families/{job-family-id}
             </a>
           </div>
@@ -210,6 +220,35 @@
       <div>
         <x-docs.code title="/api/organizations/{id}/job-families/{job-family-id}" verb="PUT" verbClass="text-yellow-700">
           @include('docs.api.partials.job-family-response')
+        </x-docs.code>
+      </div>
+    </div>
+
+    <!-- DELETE /api/organizations/{id}/job-families/{job-family-id} -->
+    <div class="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div>
+        <x-docs.h2 id="delete-a-job-family" title="Delete a job family" />
+        <p class="mb-10">This endpoint deletes a specific job family.</p>
+
+        <!-- url parameters -->
+        <x-docs.url-parameters>
+          <x-docs.attribute required name="id" type="integer" description="The ID of the organization to delete the job family from." />
+          <x-docs.attribute required name="job-family-id" type="integer" description="The ID of the job family to delete." />
+        </x-docs.url-parameters>
+
+        <!-- query parameters -->
+        <x-docs.query-parameters>
+          <p class="text-gray-500">No query parameters are available for this endpoint.</p>
+        </x-docs.query-parameters>
+
+        <!-- response attributes -->
+        <x-docs.response-attributes>
+          <p class="text-gray-500">No response attributes are available for this endpoint.</p>
+        </x-docs.response-attributes>
+      </div>
+      <div>
+        <x-docs.code title="/api/organizations/{id}/job-families/{job-family-id}" verb="DELETE" verbClass="text-red-700">
+          <div>No response body</div>
         </x-docs.code>
       </div>
     </div>
