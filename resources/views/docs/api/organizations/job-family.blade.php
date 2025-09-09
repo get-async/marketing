@@ -1,10 +1,10 @@
 <x-marketing-docs-layout :breadcrumbItems="[
   ['label' => 'Home', 'route' => route('marketing.index')],
   ['label' => 'Documentation', 'route' => route('marketing.docs.api.index')],
-  ['label' => 'Job Families'],
+  ['label' => 'Job families'],
 ]">
   <div class="py-16">
-    <x-docs.h1 title="Job Families" />
+    <x-docs.h1 title="Job families" />
 
     <x-docs.table-of-content :items="[
       [
@@ -18,6 +18,10 @@
       [
         'id' => 'create-a-job-family',
         'title' => 'Create a job family',
+      ],
+      [
+        'id' => 'update-a-job-family',
+        'title' => 'Update a job family',
       ],
     ]" />
 
@@ -43,6 +47,12 @@
             <a href="#create-a-job-family">
               <span class="text-green-700">POST</span>
               /api/organizations/{id}/job-families
+            </a>
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <a href="#update-a-job-family">
+              <span class="text-yellow-700">PUT</span>
+              /api/organizations/{id}/job-families/{job-family-id}
             </a>
           </div>
         </x-docs.code>
@@ -160,6 +170,45 @@
       </div>
       <div>
         <x-docs.code title="/api/organizations/{id}/job-families" verb="POST" verbClass="text-green-700">
+          @include('docs.api.partials.job-family-response')
+        </x-docs.code>
+      </div>
+    </div>
+
+    <!-- PUT /api/organizations/{id}/job-families/{job-family-id} -->
+    <div class="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div>
+        <x-docs.h2 id="update-a-job-family" title="Update a job family" />
+        <p class="mb-10">This endpoint updates a specific job family. It will return the job family in the response.</p>
+
+        <!-- url parameters -->
+        <x-docs.url-parameters>
+          <x-docs.attribute required name="id" type="integer" description="The ID of the organization to update the job family for." />
+          <x-docs.attribute required name="job-family-id" type="integer" description="The ID of the job family to update." />
+        </x-docs.url-parameters>
+
+        <!-- query parameters -->
+        <x-docs.query-parameters>
+          <x-docs.attribute required name="name" type="string" description="The name of the job family. Maximum 255 characters." />
+          <x-docs.attribute required name="description" type="string" description="The description of the job family. Maximum 255 characters." />
+        </x-docs.query-parameters>
+
+        <!-- response attributes -->
+        <x-docs.response-attributes>
+          <x-docs.attribute name="type" type="string" description="The object type. Always 'job-family'." />
+          <x-docs.attribute name="id" type="integer" description="The ID of the job family." />
+          <x-docs.attribute name="attributes" type="object" description="The attributes of the job family." />
+          <x-docs.attribute name="attributes.name" type="string" description="The name of the job family." />
+          <x-docs.attribute name="attributes.slug" type="string" description="The slug of the job family." />
+          <x-docs.attribute name="attributes.description" type="string" description="The description of the job family." />
+          <x-docs.attribute name="attributes.created_at" type="integer" description="The date and time the object was created, in Unix timestamp format." />
+          <x-docs.attribute name="attributes.updated_at" type="integer" description="The date and time the object was last updated, in Unix timestamp format." />
+          <x-docs.attribute name="links" type="object" description="The links of the job family." />
+          <x-docs.attribute name="self" type="string" description="The URL of the job family." />
+        </x-docs.response-attributes>
+      </div>
+      <div>
+        <x-docs.code title="/api/organizations/{id}/job-families/{job-family-id}" verb="PUT" verbClass="text-yellow-700">
           @include('docs.api.partials.job-family-response')
         </x-docs.code>
       </div>

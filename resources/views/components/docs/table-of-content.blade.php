@@ -4,7 +4,7 @@
   <ul>
     @foreach ($items as $item)
       <li>
-        <x-link href="#{{ $item['id'] }}">{{ $item['title'] }}</x-link>
+        <x-link href="#{{ $item['id'] }}" :navigate="false">{{ $item['title'] }}</x-link>
       </li>
     @endforeach
   </ul>
