@@ -2,7 +2,7 @@
 <div class="pl-4">"data": {</div>
 <div class="pl-8">
   "type":
-  <span class="text-lime-700">"job_family"</span>
+  <span class="text-lime-700">"job_discipline"</span>
   ,
 </div>
 <div class="pl-8">
@@ -12,18 +12,28 @@
 </div>
 <div class="pl-8">"attributes": {</div>
 <div class="pl-12">
+  "organization_id":
+  <span class="text-rose-800">"12"</span>
+  ,
+</div>
+<div class="pl-12">
+  "job_family_id":
+  <span class="text-rose-800">"312"</span>
+  ,
+</div>
+<div class="pl-12">
   "name":
-  <span class="text-lime-700">"Sales"</span>
+  <span class="text-lime-700">"Sales management"</span>
   ,
 </div>
 <div class="pl-12">
   "slug":
-  <span class="text-lime-700">"1-sales"</span>
+  <span class="text-lime-700">"1-sales-management"</span>
   ,
 </div>
 <div class="pl-12">
   "description":
-  <span class="text-lime-700">"Sales is the art of selling products or services to customers."</span>
+  <span class="text-lime-700">"Sales management is the art of selling products or services to customers."</span>
   ,
 </div>
 <div class="pl-12">

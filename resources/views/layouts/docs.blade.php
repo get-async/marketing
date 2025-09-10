@@ -95,6 +95,9 @@
               <div>
                 <a href="{{ route('marketing.docs.api.organizations.job-families') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations.job-families') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Job families</a>
               </div>
+              <div>
+                <a href="{{ route('marketing.docs.api.organizations.job-disciplines') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations.job-disciplines') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Job disciplines</a>
+              </div>
             </div>
           </div>
         </div>
