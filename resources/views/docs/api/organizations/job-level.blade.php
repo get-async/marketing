@@ -205,9 +205,9 @@
 
         <!-- url parameters -->
         <x-docs.url-parameters>
-          <x-docs.attribute required name="id" type="integer" description="The ID of the organization to update the job discipline for." />
-          <x-docs.attribute required name="job-family-id" type="integer" description="The ID of the job family to update the job discipline for." />
-          <x-docs.attribute required name="job-discipline-id" type="integer" description="The ID of the job discipline to update." />
+          <x-docs.attribute required name="id" type="integer" description="The ID of the organization to update the job level for." />
+          <x-docs.attribute required name="job-family-id" type="integer" description="The ID of the job family to update the job level for." />
+          <x-docs.attribute required name="job-discipline-id" type="integer" description="The ID of the job discipline the job level belongs to." />
           <x-docs.attribute required name="job-level-id" type="integer" description="The ID of the job level to update." />
         </x-docs.url-parameters>
 
