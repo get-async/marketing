@@ -8,7 +8,7 @@
 
     <x-docs.table-of-content :items="[
       [
-        'id' => 'get-the-job-disciplines-of-the-given-job-famil',
+        'id' => 'get-the-job-disciplines-of-the-given-job-family',
         'title' => 'Get the job disciplines of the given job family',
       ],
       [
@@ -72,7 +72,7 @@
     <!-- GET /api/organizations/{id}/job-families/{job-family-id}/job-disciplines -->
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
       <div>
-        <x-docs.h2 id="get-the-job-disciplines-of-the-current-organization" title="Get the job disciplines of the current organization" />
+        <x-docs.h2 id="get-the-job-disciplines-of-the-given-job-family" title="Get the job disciplines of the given job family" />
         <p class="mb-2">This endpoint gets the job disciplines the organization has.</p>
         <p class="mb-10">
           This call is
@@ -173,7 +173,7 @@
 
         <!-- response attributes -->
         <x-docs.response-attributes>
-          <x-docs.attribute name="type" type="string" description="The object type. Always 'job-family'." />
+          <x-docs.attribute name="type" type="string" description="The object type. Always 'job-discipline'." />
           <x-docs.attribute name="id" type="integer" description="The ID of the job discipline." />
           <x-docs.attribute name="attributes" type="object" description="The attributes of the job discipline." />
           <x-docs.attribute name="attributes.organization_id" type="integer" description="The ID of the organization." />
@@ -184,7 +184,7 @@
           <x-docs.attribute name="attributes.created_at" type="integer" description="The date and time the object was created, in Unix timestamp format." />
           <x-docs.attribute name="attributes.updated_at" type="integer" description="The date and time the object was last updated, in Unix timestamp format." />
           <x-docs.attribute name="links" type="object" description="The links of the job discipline." />
-          <x-docs.attribute name="self" type="string" description="The URL of the job family." />
+          <x-docs.attribute name="self" type="string" description="The URL of the job discipline." />
         </x-docs.response-attributes>
       </div>
       <div>
@@ -215,7 +215,7 @@
 
         <!-- response attributes -->
         <x-docs.response-attributes>
-          <x-docs.attribute name="type" type="string" description="The object type. Always 'job-family'." />
+          <x-docs.attribute name="type" type="string" description="The object type. Always 'job-discipline'." />
           <x-docs.attribute name="id" type="integer" description="The ID of the job discipline." />
           <x-docs.attribute name="attributes" type="object" description="The attributes of the job discipline." />
           <x-docs.attribute name="attributes.organization_id" type="integer" description="The ID of the organization." />
