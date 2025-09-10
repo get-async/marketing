@@ -29,6 +29,9 @@
             jobFamiliesDocumentation:
               '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations.job-families',) ? 'true' : 'false' }}' ===
               'true',
+            jobLevelsDocumentation:
+              '{{ str_starts_with( request()->route()->getName(),'marketing.docs.api.organizations.job-levels',) ? 'true' : 'false' }}' ===
+              'true',
           }"
           class="bg-light dark:bg-dark z-10 pt-16">
           <!-- concepts -->
@@ -97,6 +100,9 @@
               </div>
               <div>
                 <a href="{{ route('marketing.docs.api.organizations.job-disciplines') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations.job-disciplines') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Job disciplines</a>
+              </div>
+              <div>
+                <a href="{{ route('marketing.docs.api.organizations.job-levels') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.api.organizations.job-levels') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Job levels</a>
               </div>
             </div>
           </div>
