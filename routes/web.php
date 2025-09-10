@@ -19,3 +19,4 @@ Route::get('/docs/api/logs', [Docs\Api\LogsController::class, 'index'])->name('m
 Route::get('/docs/api/organizations', [Docs\Api\OrganizationsController::class, 'index'])->name('marketing.docs.api.organizations');
 Route::get('/docs/api/organizations/job-families', [Docs\Api\Organization\JobFamilyController::class, 'index'])->name('marketing.docs.api.organizations.job-families');
 Route::get('/docs/api/organizations/job-disciplines', [Docs\Api\Organization\JobDisciplineController::class, 'index'])->name('marketing.docs.api.organizations.job-disciplines');
+Route::get('/docs/api/organizations/job-levels', [Docs\Api\Organization\JobLevelController::class, 'index'])->name('marketing.docs.api.organizations.job-levels');
