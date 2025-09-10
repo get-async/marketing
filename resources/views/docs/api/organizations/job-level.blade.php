@@ -163,8 +163,8 @@
 
         <!-- url parameters -->
         <x-docs.url-parameters>
-          <x-docs.attribute required name="id" type="integer" description="The ID of the organization to create the job discipline for." />
-          <x-docs.attribute required name="job-family-id" type="integer" description="The ID of the job family to create the job discipline for." />
+          <x-docs.attribute required name="id" type="integer" description="The ID of the organization to create the job level for." />
+          <x-docs.attribute required name="job-family-id" type="integer" description="The ID of the job family to create the job level for." />
           <x-docs.attribute required name="job-discipline-id" type="integer" description="The ID of the job discipline to create the job level for." />
         </x-docs.url-parameters>
 
