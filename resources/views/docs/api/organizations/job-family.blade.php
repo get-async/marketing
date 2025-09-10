@@ -8,8 +8,8 @@
 
     <x-docs.table-of-content :items="[
       [
-        'id' => 'get-the-job-families-of-the-current-user',
-        'title' => 'Get the job families of the current user',
+        'id' => 'get-the-job-families-of-the-current-organization',
+        'title' => 'Get the job families of the current organization',
       ],
       [
         'id' => 'get-a-job-family',
@@ -36,7 +36,7 @@
       <div>
         <x-docs.code title="Endpoints">
           <div class="flex flex-col gap-y-2">
-            <a href="#get-the-job-families-of-the-current-user">
+            <a href="#get-the-job-families-of-the-current-organization">
               <span class="text-blue-700">GET</span>
               /api/organizations/{id}/job-families
             </a>
@@ -72,7 +72,7 @@
     <!-- GET /api/organizations/{id}/job-families -->
     <div class="mb-10 grid grid-cols-1 gap-6 border-b border-gray-200 pb-10 sm:grid-cols-2">
       <div>
-        <x-docs.h2 id="get-the-job-families-of-the-current-user" title="Get the job families of the current user" />
+        <x-docs.h2 id="get-the-job-families-of-the-current-organization" title="Get the job families of the current organization" />
         <p class="mb-2">This endpoint gets the job families the organization has.</p>
         <p class="mb-10">
           This call is
@@ -93,14 +93,14 @@
         <!-- response attributes -->
         <x-docs.response-attributes>
           <x-docs.attribute name="type" type="string" description="The type of the resource." />
-          <x-docs.attribute name="id" type="string" description="The ID of the organization." />
-          <x-docs.attribute name="attributes" type="object" description="The attributes of the organization." />
-          <x-docs.attribute name="attributes.name" type="string" description="The name of the organization." />
-          <x-docs.attribute name="attributes.slug" type="string" description="The slug of the organization." />
-          <x-docs.attribute name="attributes.avatar" type="string" description="The avatar of the organization." />
+          <x-docs.attribute name="id" type="string" description="The ID of the job family." />
+          <x-docs.attribute name="attributes" type="object" description="The attributes of the job family." />
+          <x-docs.attribute name="attributes.name" type="string" description="The name of the job family." />
+          <x-docs.attribute name="attributes.slug" type="string" description="The slug of the job family." />
+          <x-docs.attribute name="attributes.description" type="string" description="The description of the job family." />
           <x-docs.attribute name="attributes.created_at" type="integer" description="The date and time the object was created, in Unix timestamp format." />
           <x-docs.attribute name="attributes.updated_at" type="integer" description="The date and time the object was last updated, in Unix timestamp format." />
-          <x-docs.attribute name="links" type="object" description="The links to access the organization." />
+          <x-docs.attribute name="links" type="object" description="The links to access the job family." />
         </x-docs.response-attributes>
       </div>
       <div>
@@ -131,7 +131,7 @@
         <x-docs.response-attributes>
           <x-docs.attribute name="type" type="string" description="The type of the resource." />
           <x-docs.attribute name="id" type="string" description="The ID of the job family." />
-          <x-docs.attribute name="attributes" type="object" description="The attributes of the organization." />
+          <x-docs.attribute name="attributes" type="object" description="The attributes of the job family." />
           <x-docs.attribute name="attributes.name" type="string" description="The name of the job family." />
           <x-docs.attribute name="attributes.slug" type="string" description="The slug of the job family." />
           <x-docs.attribute name="attributes.description" type="string" description="The description of the job family." />
