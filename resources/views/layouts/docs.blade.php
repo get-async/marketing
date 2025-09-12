@@ -46,6 +46,9 @@
               <div>
                 <a href="{{ route('marketing.docs.concepts.hierarchical-structure') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.concepts.hierarchical-structure') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Hierarchical structure</a>
               </div>
+              <div>
+                <a href="{{ route('marketing.docs.concepts.permissions') }}" wire:navigate class="{{ request()->routeIs('marketing.docs.concepts.permissions') ? 'border-l-blue-400' : 'border-l-transparent' }} block border-l-3 pl-3 hover:border-l-blue-400 hover:underline">Permissions</a>
+              </div>
             </div>
           </div>
 
