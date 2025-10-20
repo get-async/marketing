@@ -16,7 +16,7 @@
     "vite": "npm:rolldown-vite@latest"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.48.0",
+    "@rollup/rollup-linux-x64-gnu": "4.52.5",
     "@tailwindcss/oxide-linux-x64-gnu": "^4.1.13",
     "lightningcss-linux-x64-gnu": "^1.30.1"
   }
